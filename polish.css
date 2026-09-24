@@ -1,0 +1,52 @@
+/* Editorial scale shared across desktop and mobile. */
+.video-container{position:relative}
+.video-status{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);min-width:170px;max-width:90%;padding:12px 16px;border:1px solid #ffffff30;border-radius:8px;background:#203344ed;color:#fff;box-shadow:0 4px 18px #0002;font-size:13px;line-height:1.5;text-align:center;z-index:3}
+.video-status[hidden]{display:none}
+.video-status progress{display:block;width:100%;height:4px;margin:9px auto 2px;accent-color:#a7c9dd}
+.video-status progress[hidden]{display:none}
+.video-status button,.video-status a{font-size:12px;color:#fff;margin:8px 4px 0;background:transparent;border:1px solid #ffffff60;border-radius:4px;padding:4px 8px;display:inline-block}
+.video-status button[hidden],.video-status a[hidden]{display:none}
+.download-size{font-size:11px;font-weight:400;opacity:.8}
+.documentation{max-width:880px;padding-top:58px;padding-bottom:60px}
+.documentation h1{font-size:42px;line-height:1.2}
+.documentation h2{font-size:26px;margin-top:38px;margin-bottom:12px}
+.documentation p,.documentation li{font-size:15px;color:var(--muted)}
+.documentation pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--wash);border:1px solid var(--line);border-radius:7px;padding:18px;font-size:13px;line-height:1.75}
+.documentation code{font-family:ui-monospace,monospace}
+.documentation .doc-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}
+.wrap{max-width:1220px}
+.hero{padding-top:58px}
+.site-header{justify-content:flex-end}
+.review-status{display:inline-flex;align-items:center;gap:12px;margin:0 0 26px;padding:6px 13px;border:1px solid #d8e2e9;border-radius:999px;background:#f7fafc;color:#547083;font-size:11px;font-weight:600;letter-spacing:.07em;line-height:1.5}
+.review-status span+span{border-left:1px solid #cfdae3;padding-left:12px;color:#6d7d86;font-weight:400;letter-spacing:.03em}
+.artifact-download{display:flex;align-items:center;justify-content:space-between;gap:44px;padding:28px 0 2px;border-top:1px solid #d2dbe2}
+.artifact-download>p{font-size:15px;color:var(--muted);max-width:570px;margin:0}
+.artifact-actions{display:flex;align-items:center;gap:18px;flex-shrink:0}
+@media(max-width:850px){.artifact-download{align-items:flex-start;flex-direction:column;gap:22px}.artifact-actions{flex-wrap:wrap}}
+.overview{max-width:1090px}
+.overview-note{margin:12px 0 0;font-size:13px;line-height:1.65;color:var(--muted)}
+.overview video{border:1px solid #dce3e7;box-shadow:0 14px 42px #2033440c}
+.section{padding-top:76px;padding-bottom:76px}
+#framework{padding-top:62px;padding-bottom:64px}
+.framework-figure{padding:18px;border-color:#dce3e7}
+nav,.wordmark,.button,.text-link{font-size:13px}
+.eyebrow{font-size:11px;letter-spacing:.15em}
+.overview figcaption,.framework-toolbar,.quiet-button,.framework-figure>figcaption{font-size:12px}
+.study-tag,.study-heading>p,.results-table thead,.protocol-note,.plot-heading h4 span,.plot-heading select{font-size:12px}
+.results-table{font-size:14px}
+.line-chart text{font-size:13px}
+.line-chart text[font-weight]{font-size:15px}
+.plot-heading select{max-width:240px}
+.gallery-group-heading>p,.clip-duration,.demo-card p,.gallery-note{font-size:12px}
+.demo-card h3{font-size:15px;line-height:1.4}
+.clip-index{font-size:11px;line-height:22px}
+.demo-grid{gap:30px 24px}
+.demo-card figcaption{padding-top:16px}
+.clip-frame{border:1px solid #dce3e7;box-shadow:0 5px 18px #20334409;border-radius:8px}
+.clip-action{width:35px;height:35px;font-size:14px}
+.gallery-note{line-height:1.7;max-width:1030px}
+.artifact-grid h3{font-size:16px}
+.artifact-grid ul,.artifact-scope p{font-size:14px}
+footer{font-size:12px}
+@media(max-width:850px){.demo-card h3{font-size:14px}.demo-card p,.clip-duration{font-size:12px}.demo-grid{gap:24px 18px}.plot-heading select{max-width:100%}}
+@media(max-width:600px){.wrap{padding-left:22px;padding-right:22px}.hero{padding-top:38px}.section,#framework{padding-top:52px;padding-bottom:52px}nav{font-size:12px;gap:22px}.wordmark{font-size:12px}.button,.text-link{font-size:12px}.hero-deck,.section-heading>p:last-child{font-size:14px}.overview figcaption{font-size:12px;line-height:1.75}.framework-toolbar,.framework-figure>figcaption,.quiet-button{font-size:12px}.framework-figure{padding:6px}.gallery-group-heading>p{font-size:12px}.demo-card h3{font-size:15px}.results-table th,.results-table td{font-size:12px}.plot-heading{gap:14px}.plot-heading select{max-width:195px;font-size:12px}footer{font-size:12px}}
