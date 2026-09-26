@@ -1,6 +1,6 @@
-# From Agent Assistance to Policy Competence
+# Learning to Recover (L2R)
 
-Iterative Learning from Natural Failures
+Iteratively Internalizing Agent Corrections into VLAs for Robotic Manipulation
 
 Static project page with recovery videos and reported results.
 The real-world videos show policy-only execution: the robot encounters

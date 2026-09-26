@@ -50,3 +50,14 @@ nav,.wordmark,.button,.text-link{font-size:13px}
 footer{font-size:12px}
 @media(max-width:850px){.demo-card h3{font-size:14px}.demo-card p,.clip-duration{font-size:12px}.demo-grid{gap:24px 18px}.plot-heading select{max-width:100%}}
 @media(max-width:600px){.wrap{padding-left:22px;padding-right:22px}.hero{padding-top:38px}.section,#framework{padding-top:52px;padding-bottom:52px}nav{font-size:12px;gap:22px}.wordmark{font-size:12px}.button,.text-link{font-size:12px}.hero-deck,.section-heading>p:last-child{font-size:14px}.overview figcaption{font-size:12px;line-height:1.75}.framework-toolbar,.framework-figure>figcaption,.quiet-button{font-size:12px}.framework-figure{padding:6px}.gallery-group-heading>p{font-size:12px}.demo-card h3{font-size:15px}.results-table th,.results-table td{font-size:12px}.plot-heading{gap:14px}.plot-heading select{max-width:195px;font-size:12px}footer{font-size:12px}}
+
+/* Updated L2R diagram coordinates; all other layout remains unchanged. */
+.hero h1 span{background:linear-gradient(100deg,#7a28cb,#477fae 58%,#00a6bd);color:transparent;background-clip:text;-webkit-background-clip:text}
+.paper-subtitle{line-height:1.5}
+.framework-stage{aspect-ratio:880.3333/486}.framework-base{height:auto}
+.environment-video{left:80.25%;top:13.3%;width:17.5%;height:22.25%;object-fit:contain;background:#f2f2f2;border-radius:4px}
+.flow-trace{fill:none;stroke:#6ea2cc;stroke-width:4;stroke-dasharray:8 17;stroke-linecap:round;opacity:.6;animation:l2r-flow 2s linear infinite}
+.loop-trace{fill:none;stroke:#5f9d88;stroke-width:2;stroke-dasharray:3 29;opacity:.55;animation:l2r-flow 3.2s linear infinite}
+@keyframes l2r-flow{to{stroke-dashoffset:-100}}
+.motion-paused .flow-trace,.motion-paused .loop-trace{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.flow-trace,.loop-trace{animation:none}}
