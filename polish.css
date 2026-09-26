@@ -54,10 +54,12 @@ footer{font-size:12px}
 /* Updated L2R diagram coordinates; all other layout remains unchanged. */
 .hero h1 span{background:linear-gradient(100deg,#7a28cb,#477fae 58%,#00a6bd);color:transparent;background-clip:text;-webkit-background-clip:text}
 .paper-subtitle{line-height:1.5}
-.framework-stage{aspect-ratio:880.3333/486}.framework-base{height:auto}
+/* Artwork layers use the exact revised figure coordinates. */
+.framework-stage{aspect-ratio:2400/1325}.framework-base{height:auto}
+.framework-ring{left:49.2916667%;top:2.490566038%;width:22.0833333%;height:40%;transform-origin:50% 50%;animation:orbit 18s linear infinite;pointer-events:none}
+.framework-labels{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .environment-video{left:80.25%;top:13.3%;width:17.5%;height:22.25%;object-fit:contain;background:#f2f2f2;border-radius:4px}
-.flow-trace{fill:none;stroke:#6ea2cc;stroke-width:4;stroke-dasharray:8 17;stroke-linecap:round;opacity:.6;animation:l2r-flow 2s linear infinite}
-.loop-trace{fill:none;stroke:#5f9d88;stroke-width:2;stroke-dasharray:3 29;opacity:.55;animation:l2r-flow 3.2s linear infinite}
-@keyframes l2r-flow{to{stroke-dashoffset:-100}}
-.motion-paused .flow-trace,.motion-paused .loop-trace{animation-play-state:paused}
-@media(prefers-reduced-motion:reduce){.flow-trace,.loop-trace{animation:none}}
+.framework-chevron{animation:chevron-flow 1.6s ease-in-out infinite}
+@keyframes chevron-flow{0%,100%{opacity:.42;transform:translate(calc(-1 * var(--dx)),calc(-1 * var(--dy)))}50%{opacity:1;transform:translate(0,0)}}
+.motion-paused .framework-ring,.motion-paused .framework-chevron{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.framework-ring,.framework-chevron{animation:none}}
